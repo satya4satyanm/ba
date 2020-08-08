@@ -1,0 +1,187 @@
+{
+	"textures": [
+		{
+			"image": "texture.png",
+			"format": "RGBA8888",
+			"size": {
+				"w": 856,
+				"h": 223
+			},
+			"scale": 1,
+			"frames": [
+				{
+					"filename": "Symbol10001",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 149,
+						"h": 125
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 149,
+						"h": 125
+					},
+					"frame": {
+						"x": 0,
+						"y": 0,
+						"w": 149,
+						"h": 125
+					}
+				},
+				{
+					"filename": "Symbol10002",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 149,
+						"h": 125
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 149,
+						"h": 125
+					},
+					"frame": {
+						"x": 149,
+						"y": 0,
+						"w": 149,
+						"h": 125
+					}
+				},
+				{
+					"filename": "Symbol10003",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 149,
+						"h": 125
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 149,
+						"h": 125
+					},
+					"frame": {
+						"x": 298,
+						"y": 0,
+						"w": 149,
+						"h": 125
+					}
+				},
+				{
+					"filename": "Symbol10004",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 149,
+						"h": 125
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 149,
+						"h": 125
+					},
+					"frame": {
+						"x": 447,
+						"y": 0,
+						"w": 149,
+						"h": 125
+					}
+				},
+				{
+					"filename": "Symbol10005",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 149,
+						"h": 125
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 149,
+						"h": 125
+					},
+					"frame": {
+						"x": 596,
+						"y": 0,
+						"w": 149,
+						"h": 125
+					}
+				},
+				{
+					"filename": "powerdragger",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 111,
+						"h": 148
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 111,
+						"h": 148
+					},
+					"frame": {
+						"x": 745,
+						"y": 0,
+						"w": 111,
+						"h": 148
+					}
+				},
+				{
+					"filename": "Symbol5",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 75,
+						"h": 98
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 75,
+						"h": 98
+					},
+					"frame": {
+						"x": 0,
+						"y": 125,
+						"w": 75,
+						"h": 98
+					}
+				},
+				{
+					"filename": "a1",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 12,
+						"h": 87
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 12,
+						"h": 87
+					},
+					"frame": {
+						"x": 75,
+						"y": 125,
+						"w": 12,
+						"h": 87
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "http://free-tex-packer.com",
+		"version": "0.6.6"
+	}
+}
