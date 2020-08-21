@@ -1,3 +1,21 @@
+function resize() {
+    console.log("resized")
+    var canvas = document.querySelector("canvas");
+    var windowWidth = window.innerWidth;
+    var windowHeight = window.innerHeight;
+    var windowRatio = windowWidth / windowHeight;
+    var gameRatio = game.config.width / game.config.height;
+    if (windowRatio < gameRatio) {
+        canvas.style.width = windowWidth + "px";
+        canvas.style.height = (windowWidth / gameRatio) + "px";
+    }
+    else {
+        canvas.style.width = (windowHeight * gameRatio) + "px";
+        canvas.style.height = windowHeight + "px";
+    }
+}
+
+
 var gameConfig = {
     "gameName": "Rescue The Zombies",
     "author": "Satyanarayan Mishra",
@@ -136,6 +154,8 @@ window.onload = function () {
         }
     }
     game = new Phaser.Game(gameConfig);
+    resize();
+    window.addEventListener("resize", resize, false);
 }
 
 class BootScene extends Phaser.Scene {
@@ -323,7 +343,7 @@ class LevelSelect extends Phaser.Scene {
         var leftMargin = (game.config.width - rowLength) / 2 + gameOptions.thumbWidth / 2;
         var colHeight = gameOptions.thumbHeight * gameOptions.rows + gameOptions.spacing * (gameOptions.rows - 1);
         var topMargin = (game.config.height - colHeight) / 2 + gameOptions.thumbHeight / 2;
-        
+
         for (var k = 0; k < gameOptions.colors.length; k++) {
             for (var i = 0; i < gameOptions.columns; i++) {
                 for (var j = 0; j < gameOptions.rows; j++) {
@@ -344,7 +364,7 @@ class LevelSelect extends Phaser.Scene {
 
         this.containerMap.setSize(game.config.width * 5, game.config.height + 100);
         // this.containerMap.setInteractive({ draggable: true });
-        this.containerMap.setInteractive(new Phaser.Geom.Rectangle(this.scrollingMap.width/2, this.scrollingMap.height/2, this.scrollingMap.width, this.scrollingMap.height), Phaser.Geom.Rectangle.Contains);
+        this.containerMap.setInteractive(new Phaser.Geom.Rectangle(this.scrollingMap.width / 2, this.scrollingMap.height / 2, this.scrollingMap.width, this.scrollingMap.height), Phaser.Geom.Rectangle.Contains);
         this.input.setDraggable(this.containerMap);
 
         this.scene.bringToTop();
