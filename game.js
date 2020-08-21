@@ -142,16 +142,15 @@ var gameOptions = {
 
 window.onload = function () {
     var gameConfig = {
+        scale: {
+            mode: Phaser.Scale.FIT,
+            autoCenter: Phaser.Scale.CENTER_BOTH
+        },
+        type: Phaser.AUTO,
+        width: 800,
+        height: 496,
         backgroundColor: 0x222222,
         scene: [BootScene, PreloadScene, Intro, LevelSelect, PlayLevel, Paused],
-        // fps: {
-        //     target: 60,
-        //     // forceSetTimeOut: true
-        // },
-        scale: {
-            width: 800,
-            height: 496
-        }
     }
     game = new Phaser.Game(gameConfig);
     resize();
