@@ -1,8 +1,8 @@
 <?xml version = "1.0" encoding = "UTF-8"?>
-<widget id="com.livetoyourpassion.words" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-<name>Tutorials Point</name>
+<widget id="com.livetoyourpassion.bowman" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<name>BowMan</name>
 <description>
-Tutorials Point Online Viewer
+BowMan Online Viewer
 </description>
 <author href = "http://livetoyourpassion.com" email = "satya4satyanm@gmail.com">
 Satya
