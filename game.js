@@ -147,8 +147,8 @@ window.onload = function () {
             autoCenter: Phaser.Scale.CENTER_BOTH
         },
         type: Phaser.AUTO,
-        width: 800,
-        height: 496,
+        width: 1000,
+        height: 500,
         backgroundColor: 0x222222,
         scene: [BootScene, PreloadScene, Intro, LevelSelect, PlayLevel, Paused],
     }
@@ -256,7 +256,7 @@ class Intro extends Phaser.Scene {
         this.add.image(0, -100, "transp").setOrigin(0, 0);
         this.add.image(game.config.width / 2 + 20, 160, 'atlas', 'Symbol10005').setRotation(45);
 
-        var txt = this.add.text(400, 300, "You are the saviour.\nSave the Islands..!", {
+        var txt = this.add.text(game.config.width / 2, 300, "You are the saviour.\nSave the Islands..!", {
             fontFamily: "Arial", fontSize: 20,
             color: "#ffffff",
             lineSpacing: 20,
@@ -265,7 +265,7 @@ class Intro extends Phaser.Scene {
         txt.setStroke('rgba(f,f,f,0.5)', 8);
         txt.setShadow(0, 0, "#7b3f00", 4, true, true);
 
-        var skip = this.add.text(400, 400, "CONTINUE", {
+        var skip = this.add.text(game.config.width / 2, 400, "CONTINUE", {
             fontFamily: "Arial", fontSize: 24,
             color: "#ffffff"
         }).setOrigin(0.5, 0.5).setInteractive();
@@ -408,7 +408,7 @@ class LevelSelect extends Phaser.Scene {
         }, this);
 
         var prevBtn = this.add.image(40, 270, "nextBtn").setInteractive().setScale(-1, 1);
-        var nextBtn = this.add.image(760, 270, "nextBtn").setInteractive();
+        var nextBtn = this.add.image(960, 270, "nextBtn").setInteractive();
         prevBtn.on('pointerdown', function () {
             if (this.scene.currentPage > 0 && this.scene.canMove) {
                 this.scene.canMove = false;
@@ -422,24 +422,24 @@ class LevelSelect extends Phaser.Scene {
             }
         });
 
-        var controls = this.add.image(780, 15, "icons").setInteractive().setOrigin(1, 0).setScale(0.8);
-        var lifes = this.add.text(546, 44, "12", {
+        var controls = this.add.image(980, 15, "icons").setInteractive().setOrigin(1, 0).setScale(0.8);
+        var lifes = this.add.text(746, 44, "12", {
             fontFamily: "Arial", fontSize: 16,
             fill: "#ffffff"
         }).setOrigin(0.5, 0).setStroke('rgba(f,f,f,0.5)', 5);
-        var coins = this.add.text(600, 44, "245", {
+        var coins = this.add.text(800, 44, "245", {
             fontFamily: "Arial", fontSize: 16,
             fill: "#ffffff"
         }).setOrigin(0.5, 0).setStroke('rgba(f,f,f,0.5)', 5);
-        var bombs = this.add.text(655, 44, "300", {
+        var bombs = this.add.text(855, 44, "300", {
             fontFamily: "Arial", fontSize: 16,
             fill: "#ffffff"
         }).setOrigin(0.5, 0).setStroke('rgba(f,f,f,0.5)', 5);
-        var settings = this.add.text(710, 44, "657", {
+        var settings = this.add.text(910, 44, "657", {
             fontFamily: "Arial", fontSize: 16,
             fill: "#ffffff"
         }).setOrigin(0.5, 0).setStroke('rgba(f,f,f,0.5)', 5);
-        var bags = this.add.text(763, 44, "4567", {
+        var bags = this.add.text(963, 44, "4567", {
             fontFamily: "Arial", fontSize: 16,
             fill: "#ffffff"
         }).setOrigin(0.5, 0).setStroke('rgba(f,f,f,0.5)', 5);
@@ -667,17 +667,17 @@ class PlayLevel extends Phaser.Scene {
             this.enimies.push(e1);
         }
         this.add.image(0, 388, 'grass').setScale(1).setOrigin(0, 0);
-        this.add.image(580, 30, 'menu').setScale(0.7).setInteractive();
-        this.add.image(640, 30, 'gear').setScale(0.8).setInteractive();
+        this.add.image(780, 30, 'menu').setScale(0.7).setInteractive();
+        this.add.image(840, 30, 'gear').setScale(0.8).setInteractive();
 
-        var pause = this.add.image(760, 30, 'pause').setScale(0.8).setInteractive();
+        var pause = this.add.image(960, 30, 'pause').setScale(0.8).setInteractive();
         pause.on('pointerdown', function () {
             gameScene.scene.pause();
             gameScene.scene.launch('Paused');
             gameScene.scene.sendToBack();
         })
 
-        var reload = this.add.image(700, 30, 'refresh').setScale(0.7).setInteractive();
+        var reload = this.add.image(900, 30, 'refresh').setScale(0.7).setInteractive();
 
         reload.on('pointerdown', function () {
             // this.registry.destroy(); // destroy registry

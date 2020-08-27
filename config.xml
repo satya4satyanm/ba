@@ -1,0 +1,27 @@
+<?xml version = “1.0” encoding = “UTF-8″?>
+<widget id=”com.livetoyourpassion.words” version=”1.0.0″ xmlns=”http://www.w3.org/ns/widgets” xmlns:gap=”http://phonegap.com/ns/1.0″ xmlns:android=”http://schemas.android.com/apk/res/android” xmlns:cdv=”http://cordova.apache.org/ns/1.0″>
+<name>Tutorials Point</name>
+<description>
+Tutorials Point Online Viewer
+</description>
+<author href = “http://livetoyourpassion.com” email = “satya4satyanm@gmail.com”>
+Satya
+</author>
+<content src=”index.html” />
+<plugin name=”cordova-plugin-whitelist” spec=”1″ />
+<preference name = “permissions” value = “none”/>
+<access origin=”*” />
+<preferance name=”android-usesCleartextTraffic” value=”true” />
+<allow-navigation href=”*” />
+
+<platform name=”android”>
+<edit-config file=”app/src/main/AndroidManifest.xml” mode=”merge” target=”/manifest/application”>
+<application android:usesCleartextTraffic=”true” android:icon="@drawable/icon" 
+    android:label="@string/archery" 
+    android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+</edit-config>
+</platform>
+<allow-navigation href=”http://*/*” />
+<allow-navigation href=”https://*/*” />
+<allow-navigation href=”data:*” />
+</widget>
